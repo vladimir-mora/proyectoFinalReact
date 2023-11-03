@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
-import SkeletonCardLoader from "../../common/skeleton/skeleton";
+import Skeleton from "../../common/skeleton/Skeleton";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { dataBase } from "../../../firebase";
 
@@ -34,7 +34,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      {items.length === 0 ? <SkeletonCardLoader /> : <ItemList items={items} />}
+      {items.length === 0 ? <Skeleton /> : <ItemList items={items} />}
       ;
     </>
   );
