@@ -6,7 +6,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <CssBaseline /> {/* //reset de css basico */}
+    <CssBaseline />
     <App />
   </>
 );
